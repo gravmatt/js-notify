@@ -12,14 +12,13 @@ var notify = function (title, options) {
     }
     if (Notification.permission === 'default') {
         Notification.requestPermission(function () {
-            notify(title, options, onclick, onclose, onDenied);
+            notify(title, options);
         });
     }
     else if (Notification.permission === 'granted') {
         opt = options || {}
         opt.tag = guid()
         var n = new Notification(title, opt);
-
         n.onclick = function () {
             opt.onclick && opt.onclick(this);
             this.close();
