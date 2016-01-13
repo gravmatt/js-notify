@@ -1,0 +1,32 @@
+{
+  "name": "js-notify",
+  "homepage": "https://github.com/gravmatt/js-notify",
+  "authors": [
+    "Rene Tanczos (@gravmatt)"
+  ],
+  "description": "Wrapper for the Notification object",
+  "main": "notify.js",
+  "moduleType": [],
+  "keywords": [
+    "js",
+    "javascript",
+    "notify",
+    "notification",
+    "browser",
+    "chrome",
+    "safari",
+    "firefox",
+    "ie",
+    "edge",
+    "opera",
+    "html"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
