@@ -1,3 +1,4 @@
+/*! Copyright (c) 2016 Rene Tanczos <gravmatt@gmail.com> - The MIT License (MIT) */
 var notify = function (title, options) {
     var guid = function() {
         function s4() {

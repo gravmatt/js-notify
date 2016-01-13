@@ -8,6 +8,12 @@ Maybe on Opera, IE an Edge as well.
 
 If someone tested it on other browser please let me know.
 
+## Get it on Bower
+
+```
+bower install js-notify
+```
+
 ## How it works
 
 ```
