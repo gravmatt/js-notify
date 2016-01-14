@@ -17,7 +17,13 @@ bower install js-notify
 ## How it works
 
 ```
-notify('title', {
+var jsNotify = new JsNotify();
+
+// request Notification permission
+jsNotify.init();
+
+// send notification
+jsNotify.notify('title', {
     body: 'Notification Text',
     icon: 'path/to/image.png',
     onclick: function(e) {}, // e -> Notification object
