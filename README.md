@@ -30,7 +30,7 @@ You just have to set a title to make it work.
 
 The json object as the second argument is optional or all it properties.
 
-If the function runs for the first time, is asks the user for permissions.
+If the function runs for the first time, it asks the user for permissions.
 
 ## Just Request Permissions
 
