@@ -2,11 +2,11 @@
 
 Wrapper for the Notification object.
 
-Works on Chrome, Safari and Firefox.
-
-Maybe on Opera, IE an Edge as well.
+Tested on Chrome, Safari and Firefox.
 
 If someone tested it on other browser please let me know.
+
+**Support for AMD and Node Module Pattern (Including browserify)**
 
 ## Get it on Bower
 
@@ -28,8 +28,16 @@ notify('title', {
 
 You just have to set a title to make it work.
 
-The json object on the second argument is optional.
+The json object as the second argument is optional or all it properties.
 
 If the function runs for the first time, is asks the user for permissions.
+
+## Just Request Permissions
+
+To request permissions without to call a new notification, execute the notify function without any parameters.
+
+```
+notify()
+```
 
 Follow me on [Twitter @gravmatt](https://twitter.com/gravmatt).
