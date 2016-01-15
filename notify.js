@@ -17,7 +17,7 @@
           });
       }
       else if (Notification.permission === 'granted') {
-          if(!title) return;
+          if(!title) return undefined;
           opt = options || {}
           opt.tag = guid()
           var n = new Notification(title, opt);
@@ -28,6 +28,7 @@
           n.onclose = function () {
               opt.onclose && opt.onclose(this);
           };
+          return n;
       }
       else if (Notification.permission === 'denied') {
           (options && options.ondenied) && options.ondenied(this);

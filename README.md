@@ -1,6 +1,6 @@
 # js-notify
 
-Wrapper for the Notification object.
+Wrapper for the browser Notification object.
 
 Tested on Chrome, Safari and Firefox.
 
@@ -26,13 +26,11 @@ notify('title', {
   });
 ```
 
-You just have to set a title to make it work.
-
-The json object as the second argument is optional or all it properties.
+The json object as the second argument is optional and all its properties.
 
 If the function runs for the first time, it asks the user for permissions.
 
-## Just Request Permissions
+## Request Permissions (optional)
 
 To request permissions without to call a new notification, execute the notify function without any parameters.
 
