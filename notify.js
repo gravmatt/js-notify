@@ -4,12 +4,12 @@
     function JsNotify() {
         var self = this
 
-        self._init = function() {
+        self._init = function(callback) {
             if (!'Notification' in window) {
                 return;
             }
-            if (Notification.permission === 'default') {
-                Notification.requestPermission(function () {});
+            if (Notification.permission !== 'granted') {
+                Notification.requestPermission(callback);
             }
         }
 
@@ -40,14 +40,37 @@
                 (options && options.ondenied) && options.ondenied(this);
             }
         };
+
+        self._isEnabled = function() {
+            if (!'Notification' in window) {
+                return false;
+            }
+            return Notification.permission === 'granted';
+        }
+
+        self._getStatus = function() {
+            if (!'Notification' in window) {
+                return false;
+            }
+            return Notification.permission;
+        }
+
     }
 
-    JsNotify.prototype.init = function() {
-		this._init()
+    JsNotify.prototype.init = function(callback) {
+		this._init(callback)
 	}
 
     JsNotify.prototype.notify = function(title, options) {
 		this._notify(title, options)
+	}
+
+    JsNotify.prototype.isEnabled = function() {
+        return this._isEnabled()
+	}
+
+    JsNotify.prototype.getStatus = function() {
+		return this._getStatus()
 	}
 
 	this.JsNotify = JsNotify
