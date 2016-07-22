@@ -36,6 +36,3 @@ You just have to set a title to make it work.
 
 The json object on the second argument is optional.
 
-If the function runs for the first time, is asks the user for permissions.
-
-Follow me on [Twitter @gravmatt](https://twitter.com/gravmatt).
