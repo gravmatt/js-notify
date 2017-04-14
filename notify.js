@@ -1,4 +1,4 @@
-/*! Copyright (c) 2016 Rene Tanczos <gravmatt@gmail.com> - The MIT License (MIT) */
+/*! Copyright (c) 2016-2017 Rene Tanczos <gravmatt@gmail.com> - The MIT License (MIT) */
 (function(window, document, undefined) {
   var notify = function (title, options) {
       var guid = function() {
@@ -8,7 +8,7 @@
           return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
         };
 
-      if (!'Notification' in window) {
+      if (!('Notification' in window)) {
           return;
       }
       if (Notification.permission === 'default') {

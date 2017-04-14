@@ -1,0 +1,39 @@
+{
+  "name": "js-notify",
+  "version": "1.0.0",
+  "description": "Wrapper for the Notification object",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gravmatt/js-notify.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "notify",
+    "notification",
+    "browser",
+    "chrome",
+    "safari",
+    "firefox",
+    "ie",
+    "edge",
+    "opera",
+    "html"
+  ],
+  "author": "Rene Tanczos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gravmatt/js-notify/issues"
+  },
+  "homepage": "https://github.com/gravmatt/js-notify#readme"
+}
