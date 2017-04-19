@@ -8,7 +8,7 @@
           return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
         };
 
-      if (!('Notification' in window)) {
+      if (!window.Notification) {
           return;
       }
       if (Notification.permission === 'default') {
